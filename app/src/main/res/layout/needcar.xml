@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVAILABLE CARS"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/listbox"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/duster"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Duster"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="5 seater"
+                android:textSize="20dp"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+
+                android:text="Pune Station"
+                android:textSize="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="50 Rs/ Per hour"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+
+
+                />
+
+            <Button
+                android:id="@+id/bok1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="105dp"
+                android:backgroundTint="@color/green"
+                android:text="BOOK"
+                android:textSize="20dp"/>
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/listbox"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ertiga"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Ertiga"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="7 seater"
+                android:textSize="20dp"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:text="Shivaji Nagar"
+                android:textSize="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="70 Rs/ Per hour"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+
+
+                />
+            <Button
+                android:id="@+id/bok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="105dp"
+                android:backgroundTint="@color/green"
+                android:text="BOOK"
+                android:textSize="20dp"/>
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/listbox"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/innova"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="innova"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="7 seater"
+                android:textSize="20dp"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+
+                android:text="Hadapsar"
+                android:textSize="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="70 Rs/ Per hour"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+
+
+                />
+            <Button
+                android:id="@+id/bok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="105dp"
+                android:backgroundTint="@color/green"
+                android:text="BOOK"
+                android:textSize="20dp"/>
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/listbox"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/safari"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Safari"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="7 seater"
+                android:textSize="20dp"
+                android:layout_marginLeft="220dp"
+                android:textColor="@color/white"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+
+                android:text="Coimbatore "
+                android:textSize="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="80 Rs/ Per hour"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+
+
+                />
+            <Button
+                android:id="@+id/bok4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="105dp"
+                android:backgroundTint="@color/green"
+                android:text="BOOK"
+                android:textSize="20dp"/>
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

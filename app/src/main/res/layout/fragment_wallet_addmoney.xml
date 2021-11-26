@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletAddmoneyFragment">
+
+    <TextView
+        android:id="@+id/slctpayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Select Payment Method"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slctpayment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/slctpayment">
+
+            <RadioGroup
+                android:id="@+id/rg_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/Credcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card / Debit Card / ATM"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/frm_credcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/credcrdnotxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Card Number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/expirytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/credcrdnotxt"
+                        android:layout_marginLeft="25dp"
+                        android:text="Expiry Date"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/credMM"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/expirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="MM">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdexpirymnth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/credYear"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/expirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/credMM"
+                        android:background="@color/white"
+                        android:hint="YYYY">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdexpiryyr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/cvv"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/expirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/credYear"
+                        android:background="@color/white"
+                        android:hint="CVV">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdcvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/credcrdnmtxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/credMM"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Card Holder Name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/credcrdamtxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/credcrdnmtxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Enter Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/credcrdamt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/debcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Net Banking"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/frm_debcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debcrdnotxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Account Number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debcrdifsctxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debcrdnotxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="IFSC CODE">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdifsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/debexpirytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debcrdifsctxt"
+                        android:layout_marginLeft="25dp"
+                        android:text="Expiry Date"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debMM"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debexpirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="MM">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdexpirymnth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debYear"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debexpirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/debMM"
+                        android:background="@color/white"
+                        android:hint="YYYY">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdexpiryyr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debcvv"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debexpirytxt"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/debYear"
+                        android:background="@color/white"
+                        android:hint="CVV">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdcvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/debcrdamttxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/debMM"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Enter Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/debcrdamt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/upi_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="UPI Payment"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/upipaylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/upinmtxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="UPI Name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/upiname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/upiidtxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/upinmtxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="UPI ID">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/upiid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/upiamttxt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/upiidtxt"
+                        android:layout_marginLeft="30dp"
+                        android:background="@color/white"
+                        android:hint="Enter Amount">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/upiamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/addmoney_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_payment"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Money" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

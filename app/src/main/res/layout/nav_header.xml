@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/purple_500"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+   >
+
+
+    <ImageView
+        android:id="@+id/norimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <TextView
+        android:id="@+id/ntx"
+        android:layout_toRightOf="@id/norimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:padding="8dp"
+        android:text="ABC"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <TextView
+    android:id="@+id/ntx1"
+        android:layout_below="@id/ntx"
+        android:layout_marginLeft="8dp"
+    android:layout_toRightOf="@id/norimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+        android:textColor="@color/white"
+    android:text="ABC@cb.students.amrita.edu"
+
+    />
+
+    <ImageView
+        android:id="@+id/walletimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/norimage"
+        android:src="@drawable/ic_wallet_svgrepo_com__1_"/>
+
+    <TextView
+        android:id="@+id/ntx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/walletimg"
+        android:layout_below="@id/norimage"
+        android:textSize="15sp"
+        android:text="Rs 6,000"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+
+</RelativeLayout>

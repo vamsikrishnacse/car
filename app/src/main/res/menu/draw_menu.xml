@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_svgrepo_com"
+            android:title="Home"
+            >
+        </item>
+
+
+
+        <item android:id="@+id/nav_mytrips"
+            android:icon="@drawable/ic_car_svgrepo_com"
+            android:title="MyTrips"
+            >
+        </item>
+
+        <item android:id="@+id/nav_verify"
+            android:icon="@drawable/ic_license_svgrepo_com"
+            android:title="Verify License">
+        </item>
+
+        <item android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_wallet_svgrepo_com"
+            android:title="Wallet">
+        </item>
+        <item android:id="@+id/nav_update"
+            android:icon="@drawable/nav_profile"
+            android:title="Profile">
+        </item>
+        <item android:id="@+id/nav_pass"
+            android:icon="@drawable/key_ic"
+            android:title="Change Password">
+        </item>
+    </group>
+
+
+<item android:title="Policy and Support">
+    <menu>
+
+        <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_policies"
+            android:icon="@drawable/ic_policy_svgrepo_com"
+            android:title="Policies"
+            >
+        </item>
+
+        <item android:id="@+id/nav_support"
+            android:icon="@drawable/ic_help_svgrepo_com"
+            android:title="Help and Support"
+            >
+        </item>
+
+        </group>
+
+
+    </menu>
+</item>
+
+    <item android:title="Logout">
+        <menu>
+            <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_svgrepo_com"
+            android:title="Logout"
+            >
+        </item>
+
+            </group>
+
+
+        </menu>
+    </item>
+
+</menu>

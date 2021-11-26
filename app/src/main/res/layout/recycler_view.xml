@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#30000000">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toRightOf="@id/iv" />
+
+                <Button
+                    android:id="@+id/loc_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt1"
+                    android:layout_toRightOf="@id/iv"
+                    android:background="@drawable/locationbutton_bg"
+                    android:drawableTop="@drawable/ic_location_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/loctxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/txt1"
+                    android:layout_toRightOf="@id/loc_button"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Rupees"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loctxt"
+                    android:layout_toRightOf="@id/iv"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_currency_rupee_svgrepo_com"
+                    />
+
+                <TextView
+                    android:id="@+id/Rsphr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Rupees"
+                    android:layout_below="@id/loctxt"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingLeft="0dp"
+                    />
+                    <TextView
+                        android:id="@+id/Initial"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Rupees"
+                        android:layout_toRightOf="@id/iv"
+                        android:textColor="@color/black"
+                        android:text="Initial/"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="25dp"
+                        android:drawableLeft="@drawable/ic_currency_rupee_svgrepo_com"
+                        />
+
+                    <TextView
+                        android:id="@+id/InitialRs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Rupees"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/Initial"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:layout_marginRight="50dp"
+                        />
+                <Button
+                    android:id="@+id/booknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Initial"
+                    android:layout_toRightOf="@id/iv"
+                    android:text="Book Now"
+                    android:layout_marginLeft="50dp"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>

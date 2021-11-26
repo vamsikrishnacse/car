@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollIndicators="right"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="@color/teal_200"
+        app:sliderIndicatorUnselectedColor="@color/purple_200"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"/>
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/image_slider"
+        android:src="@drawable/carrental"
+        />
+
+    <ImageButton
+        android:id="@+id/imgbtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/image_slider"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="60dp"
+        android:text="Need a Car"
+        android:src="@drawable/needacar"
+        />
+
+    <TextView
+        android:id="@+id/txtoffrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgbtn"
+        android:layout_marginTop="20dp"
+        android:text="OFFERS :"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/limimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/limitedoffer"
+        android:layout_below="@id/txtoffrs"
+        />
+
+    <ImageView
+        android:id="@+id/cashback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cashback"
+        android:layout_below="@id/limimg"
+        />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

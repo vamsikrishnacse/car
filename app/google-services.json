@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "185304358682",
+    "firebase_url": "https://carrentalsystem-79a8a-default-rtdb.firebaseio.com",
+    "project_id": "carrentalsystem-79a8a",
+    "storage_bucket": "carrentalsystem-79a8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185304358682:android:93c0178dd10ed2a04896a3",
+        "android_client_info": {
+          "package_name": "com.rishav.gloginexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185304358682-23bfrvhpmsmn0sm9behh5h3vud2vvuc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDARF3FKtQeHHrp-m_9DPkztEam1KfTh3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185304358682-23bfrvhpmsmn0sm9behh5h3vud2vvuc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/backbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/locationbutton_bg"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:id="@+id/Summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Order Summary"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:id="@+id/init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Summary"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:text="Initial Price     :"
+        android:textSize="20sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/initaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Summary"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/init"
+        android:textColor="@color/black"
+        android:text="N/A"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/prc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/init"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="Price/Hour     :"
+        android:textSize="20sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/prctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/init"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/prc"
+        android:textColor="@color/black"
+        android:text="N/A"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prc"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="Hours              :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+
+        android:id="@+id/hourstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prc"
+        android:layout_toRightOf="@id/hrs"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="N/A"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hrs"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="Date                :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hrs"
+        android:layout_toRightOf="@id/dt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="N/A"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="Time               :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+
+        android:id="@+id/timetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt"
+        android:layout_toRightOf="@id/tm"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="N/A"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tm"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Total               :"
+        />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/ttl"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tm"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="N/A"
+        />
+
+
+    <Button
+        android:id="@+id/confirmandpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttl"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="CONFIRM AND PAY"
+        />
+
+
+
+
+</RelativeLayout>
